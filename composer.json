@@ -12,7 +12,7 @@
     "license": "MIT",
     "require": {
         "flarum/core": "^2.0@beta",
-        "php": "^8.2"
+        "php": "^8.3"
     },
     "require-dev": {
         "flarum/testing": "^2.0@beta"
