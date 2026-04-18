@@ -1,7 +1,10 @@
 vendor/
 node_modules/
+composer.lock
 js/dist/*.map
 .phpunit.result.cache
+.phpunit.cache/
+tests/integration/tmp/
 .idea/
 .vscode/
 *.DS_Store

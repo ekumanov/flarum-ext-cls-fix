@@ -1,5 +1,9 @@
 # CLS Fix for Flarum 2.0
 
+[![Backend Tests](https://github.com/ekumanov/flarum-ext-cls-fix/actions/workflows/backend.yml/badge.svg)](https://github.com/ekumanov/flarum-ext-cls-fix/actions/workflows/backend.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Latest Stable Version](https://img.shields.io/packagist/v/ekumanov/flarum-ext-cls-fix.svg)](https://packagist.org/packages/ekumanov/flarum-ext-cls-fix)
+
 Eliminates the page jumping that happens while images in posts are loading. No configuration needed — install it, and your forum stops bouncing.
 
 ## What problem does this solve?
