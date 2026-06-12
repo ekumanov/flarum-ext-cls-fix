@@ -31,7 +31,7 @@ This extension fixes CLS for inline post images by reserving the right amount of
 ## Requirements
 
 - **Flarum 2.0** (not compatible with Flarum 1.x)
-- **PHP 8.2+**
+- **PHP 8.3+**
 - A working cache driver — see *Cache driver recommendations* below.
 
 ### Cache driver recommendations
