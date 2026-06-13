@@ -10,7 +10,12 @@
 .cls-img-wrap {
     display: block;
     width: 100%;
-    max-width: 100%;
+    // Never upscale: cap at the image's natural width when known (set inline by
+    // the XSL template via --cls-img-natural-width, or by JS once the image
+    // loads). min() keeps wide images responsive (100% of the column) while
+    // small images — e.g. a 32px emoji pasted as a Noto <img> from Google —
+    // render at their own size instead of being blown up to fill the column.
+    max-width: ~"min(100%, var(--cls-img-natural-width, 100%))";
     // The inline style on the element sets either:
     //   aspect-ratio: <w> / <h>;       (when width+height are known)
     //   aspect-ratio: var(--cls-img-ratio, 16 / 9);

@@ -23,7 +23,7 @@ class ConfigureFormatter
 <span class="cls-img-wrap">
     <xsl:attribute name="style">
         <xsl:choose>
-            <xsl:when test="@width and @height and number(@width) &gt; 0 and number(@height) &gt; 0">aspect-ratio: <xsl:value-of select="@width"/> / <xsl:value-of select="@height"/>;</xsl:when>
+            <xsl:when test="@width and @height and number(@width) &gt; 0 and number(@height) &gt; 0">aspect-ratio: <xsl:value-of select="@width"/> / <xsl:value-of select="@height"/>; --cls-img-natural-width: <xsl:value-of select="@width"/>px;</xsl:when>
             <xsl:otherwise>aspect-ratio: var(--cls-img-ratio, 16 / 9);</xsl:otherwise>
         </xsl:choose>
     </xsl:attribute>

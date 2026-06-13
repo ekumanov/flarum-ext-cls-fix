@@ -12,6 +12,11 @@ app.initializers.add('ekumanov/flarum-ext-cls-fix', () => {
         const h = img.naturalHeight;
         if (w > 0 && h > 0) {
             wrap.style.setProperty('--cls-img-ratio', w + ' / ' + h);
+            // Cap the wrapper at the measured natural width so small images
+            // (e.g. a 32px pasted emoji) aren't upscaled to fill the column.
+            // For server-known dims the XSL template already sets this; here we
+            // cover the client-measured path where dims weren't cached yet.
+            wrap.style.setProperty('--cls-img-natural-width', w + 'px');
             maybeReportDims(wrap, img, w, h);
         }
     }
